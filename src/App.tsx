@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import AboutPage from './components/AboutPage';
+import Header from './components/layout/Header';
+import AboutPage from './components/pages/AboutPage';
+import ContactPage from './components/pages/ContactPage';
 import { 
   Droplets, 
   Filter, 
@@ -105,6 +106,7 @@ function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/" element={
               <main className="pt-32">
                 {/* Hero Section */}
@@ -485,3 +487,6 @@ function App() {
 }
 
 export default App;
+
+
+export default App
