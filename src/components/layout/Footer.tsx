@@ -1,91 +1,86 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { 
+  Award, 
+  Clock,
+  Mail
+} from 'lucide-react';
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-navy text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Left Section - Logo & Description */}
-          <div className="space-y-4">
-            <Link to="/" className="text-2xl font-bold tracking-wider text-white">
-              QUICKPETRO
-            </Link>
-            <p className="text-gray-300 mt-4 max-w-sm">
-              Leading provider of thermal fluid system solutions, specializing in industrial filtration, 
-              system cleaning, and performance optimization since 1990.
-            </p>
-          </div>
-
-          {/* Middle Section - Navigation Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
-            <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-gray-300 hover:text-white transition-colors">
-                Home
-              </Link>
-              <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                About
-              </Link>
-              <Link to="/services/cleaning-flushing" className="text-gray-300 hover:text-white transition-colors">
-                Services
-              </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
-                Contact
-              </Link>
-            </nav>
-          </div>
-
-          {/* Right Section - Social Media */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Connect With Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Instagram className="w-6 h-6" />
-              </a>
-            </div>
-          </div>
+const Footer = () => (
+  <footer className="bg-gray-900 text-white py-16">
+    <div className="container mx-auto px-4">
+      <div className="grid md:grid-cols-4 gap-12">
+        {/* Navigation */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            {['Home', 'Our Services', 'Testimonials', 'About Us', 'Contact'].map((link) => (
+              <li key={link}>
+                <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="text-gray-400 hover:text-white transition-colors">
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* Bottom Section - Copyright */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>© {currentYear} QuickPetro. All rights reserved.</p>
+        {/* Services */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+          <ul className="space-y-2">
+            {[
+              'System Flushing',
+              'Filtration Solutions',
+              'Performance Testing',
+              'Maintenance Services'
+            ].map((service) => (
+              <li key={service}>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  {service}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Evidence */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Why QuickPetro</h3>
+          <ul className="space-y-4">
+            <li className="flex items-center space-x-2">
+              <Award className="w-5 h-5 text-secondary" />
+              <span className="text-gray-400">ISO 9001 Certified</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <Clock className="w-5 h-5 text-secondary" />
+              <span className="text-gray-400">30+ Years Experience</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Expert Tips & Updates</h3>
+          <p className="text-gray-400 mb-4">
+            Subscribe for maintenance tips and industry insights
+          </p>
+          <div className="flex space-x-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-gray-800 text-white px-4 py-2 rounded-lg flex-grow"
+            />
+            <button title="Subscribe" className="bg-secondary text-white p-2 rounded-lg hover:bg-[#FF5722] transition-colors">
+              <Mail className="w-5 h-5" />
+            </button>
+          </div>
         </div>
       </div>
-    </footer>
-  );
-};
+
+      <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>© 2024 QuickPetro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;
