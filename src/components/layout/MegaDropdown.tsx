@@ -34,15 +34,6 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                     </div>
                   </div>
                 </a>
-                <a href="/products/system-cleaner" className="block group">
-                  <div className="flex items-start space-x-3">
-                    <Wrench className="w-5 h-5 text-gray-600 group-hover:text-secondary mt-1" />
-                    <div>
-                      <p className="font-medium text-gray-900 group-hover:text-secondary">System Cleaner</p>
-                      <p className="text-sm text-gray-600">Removes contaminants for efficient operations</p>
-                    </div>
-                  </div>
-                </a>
               </div>
             </div>
 
@@ -120,9 +111,6 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
             </h3>
             <a href="/products/flushing-fluid" className="block px-4 py-2 text-gray-600 hover:text-secondary">
               Flushing Fluid
-            </a>
-            <a href="/products/system-cleaner" className="block px-4 py-2 text-gray-600 hover:text-secondary">
-              System Cleaner
             </a>
           </div>
 
