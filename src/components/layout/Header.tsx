@@ -53,10 +53,13 @@ const Header = () => {
             </nav>
 
             {/* CTA Button */}
-            <button className="bg-[#FF4500] text-white px-6 py-2 rounded-md hover:bg-[#FF5722] transition-colors duration-200 flex items-center space-x-2 transform hover:scale-105">
+            <a 
+              href="/contact?source=nav"
+              className="bg-[#FF4500] text-white px-6 py-2 rounded-md hover:bg-[#FF5722] transition-colors duration-200 flex items-center space-x-2 transform hover:scale-105"
+            >
               <Phone size={18} />
-              <span>Talk to an Expert</span>
-            </button>
+              <span>Schedule Expert Consultation</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
