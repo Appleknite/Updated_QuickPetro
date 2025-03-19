@@ -84,16 +84,16 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
             <div className="bg-gray-50 rounded-lg p-6">
               <div className="flex items-center space-x-2 mb-4">
                 <Phone className="w-6 h-6 text-primary" />
-                <h3 className="font-semibold text-lg text-gray-900">Get a Quote</h3>
+                <h3 className="font-semibold text-lg text-gray-900">Expert Consultation</h3>
               </div>
               <p className="text-gray-600 mb-6">
                 Discuss your specific requirements for industrial heat transfer systems with our experts.
               </p>
               <a 
-                href="/quote" 
+                href="/contact?source=mega-menu" 
                 className="inline-flex items-center space-x-2 bg-secondary text-white px-6 py-3 rounded-lg hover:bg-[#FF5722] transition-colors duration-200"
               >
-                <span>Request a Quote</span>
+                <span>Schedule Expert Consultation</span>
                 <ChevronRight className="w-4 h-4" />
               </a>
             </div>
@@ -133,16 +133,16 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
           <div className="space-y-2">
             <h3 className="font-semibold text-gray-900 flex items-center space-x-2">
               <Phone className="w-5 h-5" />
-              <span>Get a Quote</span>
+              <span>Expert Consultation</span>
             </h3>
             <p className="px-4 py-2 text-gray-600">
               Discuss your specific requirements for industrial heat transfer systems.
             </p>
             <a 
-              href="/quote" 
+              href="/contact?source=mega-menu-mobile" 
               className="block mx-4 text-center bg-secondary text-white px-6 py-3 rounded-lg hover:bg-[#FF5722] transition-colors duration-200"
             >
-              Request a Quote
+              Schedule Expert Consultation
             </a>
           </div>
         </div>
