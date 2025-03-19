@@ -14,10 +14,13 @@ const HeroSection = () => {
         </p>
         
         {/* CTA Button */}
-        <button className="bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center space-x-2 hover:bg-[#FF5722] transform hover:scale-105 transition-all duration-200 shadow-lg">
-          <span>Get a Free Consultation</span>
+        <a 
+          href="/contact?source=hero"
+          className="bg-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center space-x-2 hover:bg-[#FF5722] transform hover:scale-105 transition-all duration-200 shadow-lg"
+        >
+          <span>Schedule Expert Consultation</span>
           <ArrowRight className="w-5 h-5" />
-        </button>
+        </a>
       </div>
     </section>
   );
