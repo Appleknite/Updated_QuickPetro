@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Award } from 'lucide-react';
 
 // Dynamic import of all images from the VisualEvidence folder
-const images = import.meta.glob('/src/assets/VisualEvidence/*.webp', {
+const images = import.meta.glob('/src/Assets/VisualEvidence/*.webp', {
   eager: true,
   import: 'default'
 });
