@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/layout/Header';
-import AboutPage from './components/pages/AboutPage';
-import ContactPage from './components/pages/ContactPage';
-import HomePage from './components/pages/HomePage';
 import Footer from './components/layout/Footer';
+import AppRoutes from './routes/index.tsx';
 
 function App() {
   return (
@@ -12,11 +10,7 @@ function App() {
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
         <div className="flex-grow">
-          <Routes>
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/" element={<HomePage />} />
-          </Routes>
+          <AppRoutes />
         </div>
         <Footer />
       </div>
