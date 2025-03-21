@@ -1,5 +1,6 @@
 import React from 'react';
-import { Droplet, Settings, Phone, ChevronRight, FlaskRound as Flask, Wrench, LineChart, Cog } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Droplet, Settings, Phone, ChevronRight, FlaskRound as Flask, LineChart, Cog } from 'lucide-react';
 
 interface MegaDropdownProps {
   isOpen: boolean;
@@ -25,7 +26,7 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                 <h3 className="font-semibold text-lg text-gray-900">Products</h3>
               </div>
               <div className="space-y-4">
-                <a href="/products/flushing-fluid" className="block group">
+                <Link to="/products/flushing-fluid" className="block group" onClick={onClose}>
                   <div className="flex items-start space-x-3">
                     <Droplet className="w-5 h-5 text-gray-600 group-hover:text-secondary mt-1" />
                     <div>
@@ -33,7 +34,7 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                       <p className="text-sm text-gray-600">Enhance system longevity and performance</p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -44,7 +45,11 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                 <h3 className="font-semibold text-lg text-gray-900">Thermal Fluid System Services</h3>
               </div>
               <div className="space-y-4">
-                <a href="/services/cleaning-flushing" className="block group">
+                <Link 
+                  to="/services/thermic-fluid-cleaning-flushing" 
+                  className="block group" 
+                  onClick={onClose}
+                >
                   <div className="flex items-start space-x-3">
                     <Cog className="w-5 h-5 text-gray-600 group-hover:text-secondary mt-1" />
                     <div>
@@ -54,8 +59,8 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                       <p className="text-sm text-gray-600">Professional system maintenance services</p>
                     </div>
                   </div>
-                </a>
-                <a href="/services/oil-testing" className="block group">
+                </Link>
+                <Link to="/services/oil-testing" className="block group" onClick={onClose}>
                   <div className="flex items-start space-x-3">
                     <Flask className="w-5 h-5 text-gray-600 group-hover:text-secondary mt-1" />
                     <div>
@@ -65,8 +70,8 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                       <p className="text-sm text-gray-600">Comprehensive fluid analysis</p>
                     </div>
                   </div>
-                </a>
-                <a href="/services/system-design" className="block group">
+                </Link>
+                <Link to="/services/system-design" className="block group" onClick={onClose}>
                   <div className="flex items-start space-x-3">
                     <LineChart className="w-5 h-5 text-gray-600 group-hover:text-secondary mt-1" />
                     <div>
@@ -76,7 +81,7 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
                       <p className="text-sm text-gray-600">Tailored solutions for your needs</p>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -89,13 +94,14 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
               <p className="text-gray-600 mb-6">
                 Discuss your specific requirements for industrial heat transfer systems with our experts.
               </p>
-              <a 
-                href="/contact?source=mega-menu" 
+              <Link 
+                to="/contact?source=mega-menu" 
                 className="inline-flex items-center space-x-2 bg-secondary text-white px-6 py-3 rounded-lg hover:bg-[#FF5722] transition-colors duration-200"
+                onClick={onClose}
               >
                 <span>Schedule Expert Consultation</span>
                 <ChevronRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -109,9 +115,9 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
               <Flask className="w-5 h-5" />
               <span>Products</span>
             </h3>
-            <a href="/products/flushing-fluid" className="block px-4 py-2 text-gray-600 hover:text-secondary">
+            <Link to="/products/flushing-fluid" className="block px-4 py-2 text-gray-600 hover:text-secondary" onClick={onClose}>
               Flushing Fluid
-            </a>
+            </Link>
           </div>
 
           <div className="space-y-2">
@@ -119,15 +125,15 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
               <Settings className="w-5 h-5" />
               <span>Thermal Fluid System Services</span>
             </h3>
-            <a href="/services/cleaning-flushing" className="block px-4 py-2 text-gray-600 hover:text-secondary">
+            <Link to="/services/thermic-fluid-cleaning-flushing" className="block px-4 py-2 text-gray-600 hover:text-secondary" onClick={onClose}>
               Thermic Fluid System Cleaning & Flushing
-            </a>
-            <a href="/services/oil-testing" className="block px-4 py-2 text-gray-600 hover:text-secondary">
+            </Link>
+            <Link to="/services/oil-testing" className="block px-4 py-2 text-gray-600 hover:text-secondary" onClick={onClose}>
               Industrial Heat Transfer Oil Testing
-            </a>
-            <a href="/services/system-design" className="block px-4 py-2 text-gray-600 hover:text-secondary">
+            </Link>
+            <Link to="/services/system-design" className="block px-4 py-2 text-gray-600 hover:text-secondary" onClick={onClose}>
               Custom Thermal System Design & Optimization
-            </a>
+            </Link>
           </div>
 
           <div className="space-y-2">
@@ -138,12 +144,13 @@ const MegaDropdown: React.FC<MegaDropdownProps> = ({ isOpen, onClose }) => {
             <p className="px-4 py-2 text-gray-600">
               Discuss your specific requirements for industrial heat transfer systems.
             </p>
-            <a 
-              href="/contact?source=mega-menu-mobile" 
+            <Link 
+              to="/contact?source=mega-menu-mobile" 
               className="block mx-4 text-center bg-secondary text-white px-6 py-3 rounded-lg hover:bg-[#FF5722] transition-colors duration-200"
+              onClick={onClose}
             >
               Schedule Expert Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>
