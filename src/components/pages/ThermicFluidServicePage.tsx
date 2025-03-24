@@ -57,7 +57,7 @@ const ThermicFluidServicePage = () => {
       subpoints: [
         "Piping & Component Optimization: We reconfigure the piping layout and upgrade key components to reduce flow resistance and improve heat exchange.",
         "Integration of Smart Monitoring: We install IoT devices and real-time performance monitors to detect issues before they escalate.",
-        "Safety & Compliance: Every adjustment complies with industry standards such as DSEAR, ATEX, and HSE, ensuring a safe operating environment.",
+        "Safety & Compliance: Every adjustment complies with industry standard such as ISO 9001, ensuring a safe operating environment.",
         "This step enhances system reliability, reduces operating costs, and extends the lifespan of your equipment."
       ]
     },
@@ -143,7 +143,7 @@ const ThermicFluidServicePage = () => {
                 {
                   icon: Shield,
                   title: "Maximize Safety & Compliance",
-                  description: "Meet and exceed industry standards including DSEAR, ATEX, and HSE requirements."
+                  description: "Meet and exceed industry standards including ISO (International Organization for Standardization) 9001 requirements."
                 },
                 {
                   icon: Leaf,
