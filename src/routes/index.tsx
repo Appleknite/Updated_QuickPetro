@@ -5,6 +5,7 @@ import ContactPage from '../components/pages/ContactPage';
 import HomePage from '../components/pages/HomePage';
 import ThermicFluidServicePage from '../components/pages/ThermicFluidServicePage';
 import IndustrialHeatTransferOilTestingPage from '../components/pages/IndustrialHeatTransferOilTestingPage';
+import CustomThermalSystemDesign from '../components/pages/CustomThermalSystemDesign';
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/services/thermic-fluid-cleaning-flushing" element={<ThermicFluidServicePage />} />
       <Route path="/services/oil-testing" element={<IndustrialHeatTransferOilTestingPage />} />
+      <Route path="/services/system-design" element={<CustomThermalSystemDesign />} />
     </Routes>
   );
 };
