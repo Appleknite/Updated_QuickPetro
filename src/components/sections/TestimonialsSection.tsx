@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section id="testimonials" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
           "Transformed Our System Efficiency Overnight"
