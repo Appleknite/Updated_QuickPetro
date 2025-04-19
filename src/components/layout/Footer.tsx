@@ -21,7 +21,7 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="/#testimonial" className="text-gray-400 hover:text-white transition-colors">
+              <a href="/#testimonials" className="text-gray-400 hover:text-white transition-colors">
                 Testimonials
               </a>
             </li>
@@ -52,7 +52,7 @@ const Footer = () => (
             </li>
             <li>
               <Link 
-                to="/services/industrial-heat-transfer-oil-testing" 
+                to="/services/oil-testing" 
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Filtration Solutions
@@ -60,7 +60,7 @@ const Footer = () => (
             </li>
             <li>
               <Link 
-                to="/services/industrial-heat-transfer-oil-testing" 
+                to="/services/oil-testing" 
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Performance Testing
