@@ -33,14 +33,14 @@ const ContactPage = () => {
               "name": "QuickPetro",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Industrial Area",
+                "streetAddress": "83, Pushpak Industrial Estate, Nika Tube Compound, Vatva G.I.D.C",
                 "addressLocality": "Ahmedabad",
                 "addressRegion": "Gujarat",
-                "postalCode": "380015",
+                "postalCode": "382445",
                 "addressCountry": "IN"
               },
-              "telephone": "+91-79-12345678",
-              "email": "info@quickpetro.com"
+              "telephone": "+91 98250 44917",
+              "email": "quickpetro@gmail.com"
             }
           `}
         </script>
@@ -71,9 +71,14 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Visit Us</h3>
                       <p className="text-gray-600">
-                        123 Industrial Area<br />
-                        Ahmedabad, Gujarat 380015<br />
-                        India
+                        <a href= "https://maps.app.goo.gl/h4givYYdZFCMZD81A"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-secondary"> 
+                        83, Pushpak Industrial Estate, Nika Tube Compound, Vatva G.I.D.C<br />
+                        Ahmedabad – 382445<br />
+                        Gujarat, India
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -83,8 +88,8 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Call Us</h3>
                       <p className="text-gray-600">
-                        <a href="tel:+917912345678" className="hover:text-secondary">
-                          +91-79-12345678
+                        <a href="tel:+919825044917" className="hover:text-secondary">
+                          +91 98250 44917
                         </a>
                       </p>
                     </div>
@@ -95,8 +100,8 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Email Us</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@quickpetro.com" className="hover:text-secondary">
-                          info@quickpetro.com
+                        <a href="mailto:quickpetro@gmail.com" className="hover:text-secondary">
+                          quickpetro@gmail.com
                         </a>
                       </p>
                     </div>
@@ -180,7 +185,7 @@ const ContactPage = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.70717754748!2d72.43965535!3d23.020527450000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710337547044!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14694.08353560439!2d72.62795769412608!3d22.967865724121886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85cc5b3c91f3%3A0x48f23a00947a4e52!2sLegato%20Speciality%20Lubricants!5e0!3m2!1sen!2sca!4v1745809870409!5m2!1sen!2sca"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
