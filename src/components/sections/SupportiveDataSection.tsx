@@ -18,7 +18,7 @@ const SupportiveDataSection = () => {
             },
             {
               icon: Target,
-              stat: "100+",
+              stat: "110+",
               description: "Satisfied Clients"
             },
             {
@@ -28,7 +28,7 @@ const SupportiveDataSection = () => {
             },
             {
               icon: LineChart,
-              stat: "₹3.5M+",
+              stat: "₹10L+",
               description: "Annual Client Savings"
             },
             {
