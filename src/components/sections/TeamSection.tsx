@@ -9,22 +9,22 @@ const TeamSection = () => {
           {/* Team Members */}
           {[
             {
-              name: "Rajesh Patel",
+              name: "Dhaval Gandhi",
               role: "Founder & CEO",
               tenure: "30+ years experience",
-              image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=300"
+              image: "https://thumbs2.imgbox.com/6d/9f/gVzj71oq_t.jpg"
             },
             {
-              name: "Amit Shah",
-              role: "Technical Director",
-              tenure: "15+ years experience",
-              image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=300"
+              name: "Bhavika Gandhi",
+              role: "Operations Director",
+              tenure: "5+ years experience",
+              image: "https://thumbs2.imgbox.com/9f/f2/pmYMeGGO_t.jpg"
             },
             {
-              name: "Priya Desai",
-              role: "Operations Manager",
-              tenure: "12+ years experience",
-              image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300"
+              name: "Dev Gandhi",
+              role: "Technical Manager",
+              tenure: "2+ years experience",
+              image: "https://thumbs2.imgbox.com/b5/e0/fDgIijOm_t.jpg"
             }
           ].map((member, index) => (
             <div key={index} className="text-center">
@@ -47,7 +47,7 @@ const TeamSection = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
               <img 
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=150" 
+                src="https://thumbs2.imgbox.com/6d/9f/gVzj71oq_t.jpg" 
                 alt="Rajesh Patel" 
                 className="w-full h-full object-cover"
               />
@@ -58,7 +58,7 @@ const TeamSection = () => {
                 Our success is built on a foundation of technical expertise, unwavering commitment to quality, and 
                 a deep understanding of our clients' needs."
               </blockquote>
-              <p className="font-semibold">Rajesh Patel</p>
+              <p className="font-semibold">Dhaval Gandhi</p>
               <p className="text-gray-300">Founder & CEO, QuickPetro</p>
             </div>
           </div>
