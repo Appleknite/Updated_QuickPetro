@@ -67,10 +67,6 @@ const Header = () => {
                   }`}
                 />
               </button>
-
-              <a href="/oil-filtration-machine" className="text-gray-700 hover:text-gray-900 transition-colors">
-                Oil Filtration Machine
-              </a>
             </nav>
 
             {/* CTA Button */}
