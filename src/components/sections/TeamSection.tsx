@@ -43,7 +43,7 @@ const TeamSection = () => {
         </div>
 
         {/* Personal Statement */}
-        <div className="bg-navy text-white p-8 rounded-xl">
+        <div className="bg-blue-900 text-white p-8 rounded-xl">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
               <img 
